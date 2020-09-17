@@ -1,4 +1,4 @@
-FROM centos:systemd
+FROM centos/systemd
 
 WORKDIR /root
 
@@ -8,4 +8,3 @@ RUN build.sh
 
 # Run systemd init system as PID1
 CMD [ "/sbin/init" ]
-
